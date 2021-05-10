@@ -30,7 +30,7 @@ class Empresa extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('EMPRESA Veterinaria'),
+        title: new Text('Empresa Tetos Cars'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Empresa"),
@@ -44,7 +44,7 @@ class Productos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('PRODUCTOS de Veterinaria'),
+        title: new Text('Productos Tetos Cars'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Productos"),
@@ -58,7 +58,7 @@ class Contactos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('CONTACTOS Veterinaria'),
+        title: new Text('Contactos Tetos Cars'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Contactos"),
