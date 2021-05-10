@@ -35,7 +35,7 @@ class Empresa extends StatelessWidget {
       body: Center(
         
  child: Image.asset(
-           "assets/vochito.jpg",
+           "assets/x.jpg",
           width: 400.0,
         ),
       ), //finbody
