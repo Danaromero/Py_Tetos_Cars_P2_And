@@ -1,14 +1,14 @@
   
 import 'package:flutter/material.dart';
 
-void main() => runApp(VeterinariaApp());
+void main() => runApp(TetosApp());
 
-class VeterinariaApp extends StatelessWidget {
+class TetosApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Mi Veterinaria',
+        title: 'Tetos Cars',
         theme: ThemeData(
           //el fondo va dentro de el tema
           primarySwatch: Colors.pink,
@@ -23,7 +23,7 @@ class VeterinariaApp extends StatelessWidget {
 
         home: Inicio()); //cierre de material app
   } //fin widget context
-} //fin VeterinariaApp class
+} //fin TetosApp class
 
 class Empresa extends StatelessWidget {
   @override
@@ -87,7 +87,7 @@ class Inicio extends StatelessWidget {
                     padding: EdgeInsets.all(10),
                     child: RaisedButton(
                       color: Colors.white,
-                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
 
                       onPressed: () {
                         Navigator.pushNamed(context, "/inicio");
