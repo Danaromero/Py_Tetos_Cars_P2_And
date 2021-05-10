@@ -33,7 +33,11 @@ class Empresa extends StatelessWidget {
         title: new Text('Empresa Tetos Cars'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Empresa"),
+        
+ child: Image.asset(
+           "assets/vochito.jpg",
+          width: 200.0,
+        ),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
