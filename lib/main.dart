@@ -152,27 +152,6 @@ class Inicio extends StatelessWidget {
                     )
                   ],
                 ),
-                Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(10),
-                      child: RaisedButton(
-                        color: Colors.white,
-                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                        onPressed: () {
-                          Navigator.pushNamed(context, "/contacto");
-                        },
-                        child: SizedBox(
-                          width: 100,
-                          height: 100,
-                          child: Center(
-                            child: Text("CONTACTO", textAlign: TextAlign.center),
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
               ],
             ),
             ]//Widget            
