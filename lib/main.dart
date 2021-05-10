@@ -113,7 +113,7 @@ class Inicio extends StatelessWidget {
                     padding: EdgeInsets.all(10),
                     child: RaisedButton(
                       color: Colors.white,
-                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                       onPressed: () {
                         Navigator.pushNamed(context, "/empresa");
                       },
@@ -141,7 +141,7 @@ class Inicio extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
                         color: Colors.white,
-                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/productos");
                         },
@@ -162,7 +162,7 @@ class Inicio extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                       child: RaisedButton(
                         color: Colors.white,
-                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                         onPressed: () {
                           Navigator.pushNamed(context, "/contacto");
                         },
