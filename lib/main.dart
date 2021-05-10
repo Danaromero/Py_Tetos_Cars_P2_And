@@ -36,7 +36,7 @@ class Empresa extends StatelessWidget {
         
  child: Image.asset(
            "assets/vochito.jpg",
-          width: 200.0,
+          width: 400.0,
         ),
       ), //finbody
     ); //fin de scaffold
