@@ -51,7 +51,10 @@ class Productos extends StatelessWidget {
         title: new Text('Productos Tetos Cars'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Productos"),
+        child: Image.asset(
+           "assets/lol.jpg",
+          width: 400.0,
+        ),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
