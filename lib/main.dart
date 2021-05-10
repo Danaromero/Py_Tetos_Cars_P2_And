@@ -73,7 +73,7 @@ class Inicio extends StatelessWidget {
     return new Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
-        decoration: BoxDecoration(color: Colors.cyan, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
+        decoration: BoxDecoration(color: Colors.purple, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
             ), //fin box decoration
 
 //hacemos la columna de el mapa
