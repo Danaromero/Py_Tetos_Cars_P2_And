@@ -68,7 +68,10 @@ class Contactos extends StatelessWidget {
         title: new Text('Contactos Tetos Cars'),
       ), //findeappbar
       body: Center(
-        child: Text("Seccion Contactos"),
+         child: Image.asset(
+           "assets/juarez.png",
+          width: 400.0,
+        ),
       ), //finbody
     ); //fin de scaffold
   } //fin widget context
