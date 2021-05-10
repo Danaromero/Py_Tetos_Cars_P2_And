@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(VeterinariaApp());
+void main() => runApp(TetosApp());
 
-class VeterinariaApp extends StatelessWidget {
+class TetosApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Mi Veterinaria',
+        title: 'Tetos Cars',
         theme: ThemeData(
           //el fondo va dentro de el tema
           primarySwatch: Colors.amber,
@@ -29,7 +29,7 @@ class Empresa extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('EMPRESA Veterinaria'),
+        title: new Text('Empresa'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Empresa"),
@@ -43,7 +43,7 @@ class Productos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('PRODUCTOS de Veterinaria'),
+        title: new Text('Productos '),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Productos"),
@@ -57,7 +57,7 @@ class Contactos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('CONTACTOS Veterinaria'),
+        title: new Text('Contactos'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Contactos"),
@@ -72,7 +72,7 @@ class Inicio extends StatelessWidget {
     return new Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
-        decoration: BoxDecoration(color: Colors.cyan, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
+        decoration: BoxDecoration(color: Colors.green, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
             ), //fin box decoration
 
 //hacemos la columna de el mapa
@@ -86,7 +86,7 @@ class Inicio extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(10),
                     child: RaisedButton(
-                      color: Colors.grey,
+                      color: Colors.blue,
                       shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
 
                       onPressed: () {
@@ -97,23 +97,23 @@ class Inicio extends StatelessWidget {
                         height: 100,
                         child: Center(
                           child: Text(
-                            "INICIO",
+                            "Inicio",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w600),
-                          ), //fin del center
-                        ), //fin center
-                      ), //fin sizedbox de inicio
-                    ), //boton inicio
-                  ) //fin padding
-                ], //fin widget niño
-              ), //fin de column dentro de column
-            ]//segundo children fin 2
-            ), //cierre de row- fila 1
-          ], //cierre de children widget 1
-        ), //cierre de column en el child
+                          ), //Fin Center
+                        ), //Fin Center
+                      ), //Fin SizedBox Inicio
+                    ), //Boton Inicio
+                  ) //Fin Padding
+                ], //Fin Widget Children
+              ), //Fin Columna dentro de Columna
+            ]//Children 2
+            ), //Fin Row Fila
+          ], //Fin widget 1
+        ), //Cierre Columna Child
 
         
-      ), //fin del container
-    ); //fin scaffold
-  } //fin de el widget inicio
-} //fin de inicio
+      ), //Fin Container
+    ); //Fin Scasffold
+  } //Fin widget 
+} //Fin Inicio
