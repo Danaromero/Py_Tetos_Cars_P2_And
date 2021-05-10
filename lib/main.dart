@@ -73,7 +73,7 @@ class Inicio extends StatelessWidget {
     return new Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 250, bottom: 20, right: 10, left: 10),
-        decoration: BoxDecoration(color: Colors.black, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/mmm.PNG"), alignment: Alignment.topCenter) //fin de decoration image
+        decoration: BoxDecoration(color: Colors.grey, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/mmm.PNG"), alignment: Alignment.topCenter) //fin de decoration image
             ), //fin box decoration
 
 //hacemos la columna de el mapa
@@ -86,7 +86,7 @@ class Inicio extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(10),
                     child: RaisedButton(
-                      color: Colors.grey,
+                      color: Colors.white,
                       shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
 
                       onPressed: () {
