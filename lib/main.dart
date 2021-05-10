@@ -1,13 +1,14 @@
+  
 import 'package:flutter/material.dart';
 
-void main() => runApp(TetosApp());
+void main() => runApp(VeterinariaApp());
 
-class TetosApp extends StatelessWidget {
+class VeterinariaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Tetos Cars',
+        title: 'Mi Veterinaria',
         theme: ThemeData(
           //el fondo va dentro de el tema
           primarySwatch: Colors.amber,
@@ -29,7 +30,7 @@ class Empresa extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Empresa'),
+        title: new Text('EMPRESA Veterinaria'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Empresa"),
@@ -43,7 +44,7 @@ class Productos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Productos '),
+        title: new Text('PRODUCTOS de Veterinaria'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Productos"),
@@ -57,7 +58,7 @@ class Contactos extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: new Text('Contactos'),
+        title: new Text('CONTACTOS Veterinaria'),
       ), //findeappbar
       body: Center(
         child: Text("Seccion Contactos"),
@@ -72,14 +73,13 @@ class Inicio extends StatelessWidget {
     return new Scaffold(
       body: Container(
         padding: EdgeInsets.only(top: 130, bottom: 10, right: 10, left: 10),
-        decoration: BoxDecoration(color: Colors.amber, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
+        decoration: BoxDecoration(color: Colors.cyan, image: DecorationImage(image: NetworkImage("https://raw.githubusercontent.com/Danaromero/Mis_Imagenes_Romero/main/vacunas-consejos-peru.jpg"), alignment: Alignment.topCenter) //fin de decoration image
             ), //fin box decoration
 
 //hacemos la columna de el mapa
         child: Column(
           children: <Widget>[
             //hacemos la primera fila de el mapa
-
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Column(
                 children: <Widget>[
@@ -99,36 +99,40 @@ class Inicio extends StatelessWidget {
                           child: Text(
                             "INICIO",
                             textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w600),
-                          ), //Fin Center
-                        ), //Fin Center
-                      ), //Fin SizedBox Inicio
-                    ), //Boton Inicio
-                  ) //Fin Padding
-                ], //Fin Widget Children
-              ), //Fin Columna Interna C1
-            Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(10),
-                      child: RaisedButton(
-                        color: Colors.white,
-                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                        onPressed: () {
-                          Navigator.pushNamed(context, "/empresa");
-                        },
-                        child: SizedBox(
-                          width: 100,
-                          height: 100,
-                          child: Center(
-                            child: Text("EMPRESA", textAlign: TextAlign.center),
-                          ),
+                            style: TextStyle(color: Colors.indigo, fontWeight: FontWeight.w900),
+                          ), //fin del center
+                        ), //fin center
+                      ), //fin sizedbox de inicio
+                    ), //boton inicio
+                  ) //fin padding
+                ], //fin widget niño
+              ), //fin de column dentro de column interna 1
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: RaisedButton(
+                      color: Colors.white,
+                      shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/empresa");
+                      },
+                      child: SizedBox(
+                        width: 100,
+                        height: 100,
+                        child: Center(
+                          child: Text("EMPRESA", textAlign: TextAlign.center),
                         ),
                       ),
-                    )
-                  ],
-                ),//r1 columna 1
-                Row(
+                    ),
+                  )
+                ],
+              ), //r1 columna 2
+            ] //segundo children fin 2 widget
+                ), //cierre de row- fila 1
+
+//inicio de la fila 2
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Column(
@@ -151,15 +155,33 @@ class Inicio extends StatelessWidget {
                       ),
                     )
                   ],
-                ),
+                ), // row 2 fin columna 1
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/contacto");
+                        },
+                        child: SizedBox(
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text("CONTACTO", textAlign: TextAlign.center),
+                          ),
+                        ),
+                      ),
+                    )
+                  ], //fin children del 2-2
+                ), //fin row2 columna 2
               ],
-            ),
-            ]//Widget            
-            ), //Fin  Fila 1
-            
-          ], //Fin widget 1
-        ), //Cierre Columna Child    
-      ), //Fin Container
-    ); //Fin Scasffold
-  } //Fin widget 
-} //Fin Inicio
+            ), //fin row 2 fila 2
+          ], //cierre de children widget 1
+        ), //cierre de column en el child
+      ), //fin del container
+    ); //fin scaffold
+  } //fin de el widget inicio
+} //fin de inicio
